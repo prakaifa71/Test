@@ -53,6 +53,8 @@ function App() {
               options={[
                 { label: "Irene", value: "irene" },
                 { label: "Alice", value: "alice" },
+                
+{ label: "Uka", value: "Uka" },
               ]}
             />
           </Form.Item>
