@@ -9,4 +9,5 @@ test('form', async ({ page }) => {
 }).click();
  await expect(page.getByRole('button', { name: 'Submit' }))
   .toBeEnabled();
+  console.log("test pass")
 });
