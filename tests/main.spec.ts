@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 test('form', async ({ page }) => {
- page.goto('http://localhost:5174/')
+ page.goto('http://localhost:3000')
  await page.locator('#name').fill("Pang");
  await page.locator('#lastname').fill("007");
  await page.locator('#dog').click();
@@ -9,5 +9,5 @@ test('form', async ({ page }) => {
 }).click();
  await expect(page.getByRole('button', { name: 'Submit' }))
   .toBeEnabled();
-  console.log("test pass")
+  console.log("test")
 });
